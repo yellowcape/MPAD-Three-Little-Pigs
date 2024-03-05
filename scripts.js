@@ -16,5 +16,4 @@ function nextImg() {
     second.style.msTransform = "rotateY(-180deg)";
     second.style.webkitTransform = "rotateY(-180deg)";
     second.style.transform = "rotateY(-180deg)";
-    alert('Hello');
 }
