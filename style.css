@@ -1,3 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: sans-serif;
+    background: powderblue;
+}
+
+/* Book */
+.book {
+    position: relative;
+    width: 350px;
+    height: 500px;
+    transition: transform 0.5s;
+}
+
+.paper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    perspective: 1500px;
+}
+
+.front, .back {
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform-origin: left;
+    transition: transform 0.5s;
+}
+
+.front {
+    z-index: 1;
+    backface-visibility: hidden;
+    border-left: 3px solid powderblue;
+}
+
+.back {
+    z-index: 0;
+}
+
+.front-content, .back-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-content{
+    transform: rotateY(180deg);
+}
+
+/* Paper flip effect */
+.flipped .front, .flipped .back {
+    transform: rotateY(-180deg);
+}
+
+
+/* Controller Buttons */
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 10px;
+    transition: transform 0.5s;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover i {
+    color: #636366;
+    font-size: 50px;
+}
+
+i {
+    font-size: 50px;
+    color: red;
+}
+
+/* Paper stack order */
+#p1 {
+    z-index: 3;
+}
+
+#p2 {
+    z-index: 2;
+}
+
+#p3 {
+    z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+OLD CODE I HAVE LITERALLY NO IDEA WHAT THIS IS AND I COULDN'T WORK WITH IT
+
+
 body {
     margin: 4em;
 }
@@ -8,10 +159,10 @@ body {
     position: relative;
 
     z-index: 100;
-    -webkit-perspective: 1300px;
-    perspective: 1300px;
+     -webkit-perspective: 1300px;
+     perspective: 1300px; 
     -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
+    backface-visibility: visible;
 }
 
 .page {
@@ -58,7 +209,7 @@ body {
 	top: 0;
 	left: 0;
 	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
+	backface-visibility: visible;
 }
 
 .page > div {
@@ -78,10 +229,11 @@ body {
     z-index: 999;
 }
 
-/* problematic class: `.content` */
+
 .content {
-    width: 200%;
+    width: 100%;
     background: red;
+    word-wrap: break-word;
 }
 
 
@@ -91,7 +243,7 @@ body {
 
 
 
-/* controls */
+
 #prev, #next {
     position: absolute;
     width: 50%;
@@ -110,3 +262,5 @@ body {
     top: 0;
     left: 50%;
 }
+
+*/
