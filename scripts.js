@@ -16,8 +16,8 @@ let currentLocation = 1;
 let numberOfPages = 3;
 let maxLocation = numberOfPages + 1;
 
-function openBook(isAtBegining) {
-    if(isAtBegining) {
+function openBook(isAtBeginning) {
+    if(isAtBeginning) {
         book.style.transform = "translateX(0%)";
     } else {
         book.style.transform = "translateX(50%)";
@@ -26,14 +26,12 @@ function openBook(isAtBegining) {
     nextBtn.style.transform = "translateX(180px)";
 }
 
-function closeBook(isAtBegining){
-    if(isAtBegining) {
+function closeBook(isAtBeginning){
+    if(isAtBeginning) {
         book.style.transform = "translateX(0%)";
     } else{
         book.style.transform = "translateX(100%)";
-
     }
-    
     prevBtn.style.transform = "translateX(0px)";
     nextBtn.style.transform = "translateX(0px)";
 }
@@ -83,7 +81,6 @@ function goPrevPage(){
                 throw new Error("unknown state");
         }
         currentLocation--;
-    
     }
 }
 
