@@ -1,6 +1,8 @@
 // references to DOM elements
 const prevBtn = document.querySelector("#prev-btn");
 const nextBtn = document.querySelector("#next-btn");
+const kissingBtn = document.querySelector(".kissing-scene-button");
+const kissingScPg = document.querySelector(".kissing");
 const book = document.querySelector("#book");
 
 const paper1 = document.querySelector("#p1");
@@ -18,6 +20,8 @@ const paper11 = document.querySelector("#p11");
 // event listeners
 prevBtn.addEventListener("click", goPrevPage);
 nextBtn.addEventListener("click", goNextPage);
+kissingBtn.addEventListener("click", kissingClick); 
+kissingScPg.addEventListener("click", kissingCloseClick);
 
 // business logic
 let currentLocation = 1;
@@ -155,4 +159,20 @@ function goPrevPage(){
         }
         currentLocation--;
     }
+}
+
+function kissingClick() {
+    alert("KISS!!!!!!!!!!!!!!!!!!!!");
+    kissingScPg.style.display = "flex";
+    kissingScPg.style.opacity = 100;
+    kissingBtn.style.opacity = 0;
+    kissingScPg.style.zIndex = 12;
+}
+
+function kissingCloseClick() {
+    alert("no more kiss");
+    kissingScPg.style.display = "none";
+    kissingScPg.style.opacity = 0;
+    kissingBtn.style.opacity = 0;
+    kissingScPg.style.zIndex = 0;
 }
