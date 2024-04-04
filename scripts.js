@@ -83,18 +83,22 @@ function goNextPage(){
             case 8:
                 paper8.classList.add("flipped");
                 paper8.style.zIndex = 8;
+                hideKissing();
                 break;
             case 9:
                 paper9.classList.add("flipped");
                 paper9.style.zIndex = 9;
+                hideKissing();
                 break;
             case 10:
                 paper10.classList.add("flipped");
                 paper10.style.zIndex = 10;
+                hideKissing();
                 break;
             case 11:
                 paper11.classList.add("flipped");
                 paper11.style.zIndex = 11;
+                hideKissing();
                 closeBook();
                 break;
             default:
@@ -117,7 +121,6 @@ function goPrevPage(){
                     paper2.style.zIndex = 10;
                 break;
             case 4:
-                openBook();
                     paper3.classList.remove("flipped");
                     paper3.style.zIndex = 9;
                 break;
@@ -175,4 +178,8 @@ function kissingCloseClick() {
     kissingScPg.style.opacity = 0;
     kissingBtn.style.opacity = 0;
     kissingScPg.style.zIndex = 0;
+}
+
+function hideKissing() {
+        kissingBtn.style.visibility = "hidden";
 }

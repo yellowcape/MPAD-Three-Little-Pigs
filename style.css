@@ -154,4 +154,14 @@ i {
     background-color: red;
     z-index: 20;
     display: flex;
+    cursor: pointer;
+}
+
+.kissing-scene-button:hover
+{
+    background-color: blue;
+}
+
+.kissing{
+    cursor: pointer;
 }
