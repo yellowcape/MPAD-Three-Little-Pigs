@@ -1,3 +1,4 @@
+/* GENERAL STYLES START */
 * {
     margin: 0;
     padding: 0;
@@ -147,6 +148,22 @@ i {
     z-index: 1;
 }
 
+
+/* GENERAL STYLES END */
+
+
+
+
+
+/* CAROLINE CSS START */
+
+/* CAROLINE CSS END */
+
+
+
+
+
+/* ALEX CSS START */
 .kissing-scene-button
 {
     width:100px;
@@ -165,3 +182,12 @@ i {
 .kissing{
     cursor: pointer;
 }
+/* ALEX CSS END */
+
+
+
+
+
+/* SEBASTIEN CSS START */
+
+/* SEBASTIEN CSS END */
