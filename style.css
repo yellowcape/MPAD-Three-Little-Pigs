@@ -157,6 +157,24 @@ i {
 
 /* CAROLINE CSS START */
 
+#f1 {
+    position: relative;
+    height: 500px;
+    background-image: url('https://creativeclickmedia.com/wp-content/uploads/2018/04/wireframe-box-270x203.jpg');
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: pink; 
+    text-align: center;
+}
+#f1 {
+    font-size: 2rem;
+    margin-bottom: 450px;
+}
+
 /* CAROLINE CSS END */
 
 
