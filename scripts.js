@@ -1,8 +1,8 @@
 // references to DOM elements
 const prevBtn = document.querySelector("#prev-btn");
 const nextBtn = document.querySelector("#next-btn");
-const kissingBtn = document.querySelector(".kissing-scene-button");
-const kissingScPg = document.querySelector(".kissing");
+// const kissingBtn = document.querySelector(".kissing-scene-button");
+// const kissingScPg = document.querySelector(".kissing");
 const book = document.querySelector("#book");
 
 const paper1 = document.querySelector("#p1");
@@ -20,8 +20,8 @@ const paper11 = document.querySelector("#p11");
 // event listeners
 prevBtn.addEventListener("click", goPrevPage);
 nextBtn.addEventListener("click", goNextPage);
-kissingBtn.addEventListener("click", kissingClick); 
-kissingScPg.addEventListener("click", kissingCloseClick);
+// kissingBtn.addEventListener("click", kissingClick); 
+// kissingScPg.addEventListener("click", kissingCloseClick);
 
 // business logic
 let currentLocation = 1;
@@ -83,22 +83,22 @@ function goNextPage(){
             case 8:
                 paper8.classList.add("flipped");
                 paper8.style.zIndex = 8;
-                hideKissing();
+                // hideKissing();
                 break;
             case 9:
                 paper9.classList.add("flipped");
                 paper9.style.zIndex = 9;
-                hideKissing();
+                // hideKissing();
                 break;
             case 10:
                 paper10.classList.add("flipped");
                 paper10.style.zIndex = 10;
-                hideKissing();
+                // hideKissing();
                 break;
             case 11:
                 paper11.classList.add("flipped");
                 paper11.style.zIndex = 11;
-                hideKissing();
+                // hideKissing();
                 closeBook();
                 break;
             default:
@@ -164,7 +164,7 @@ function goPrevPage(){
     }
 }
 
-function kissingClick() {
+ /* function kissingClick() {
     alert("KISS!!!!!!!!!!!!!!!!!!!!");
     kissingScPg.style.display = "flex";
     kissingScPg.style.opacity = 100;
@@ -181,5 +181,4 @@ function kissingCloseClick() {
 }
 
 function hideKissing() {
-        kissingBtn.style.visibility = "hidden";
-}
+        kissingBtn.style.visibility = "hidden";} */
