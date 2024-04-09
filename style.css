@@ -12,7 +12,7 @@ body {
     align-items: center;
 
     font-family: sans-serif;
-    background: powderblue;
+    background: #9EE5F8;
 }
 
 /* Book */
@@ -83,13 +83,12 @@ button:focus {
 }
 
 button:hover i {
-    color: #636366;
+    color: #74AF39;
     font-size: 50px;
 }
-
 i {
     font-size: 50px;
-    color: red;
+    color: #372254;
 }
 
 /* Paper stack order */
@@ -163,7 +162,47 @@ i {
    /*COVER PAGE END*/
 /* F1 End */
 
+/* B1 Start*/
+
+#b1 {
+    height: 100%;
+    width: 100%;
+    display: flex;           
+    align-items: center;            
+    flex-direction: column; 
+    padding: 1rem;
+    position: fixed;
+    font-size: small;
+    }
+
+.b1-whole {
+    height: 29rem;
+    width: 100%;
+    max-height: 29rem;
+    background-color: lightgray;
+}
+
+
 /* F2 Start */
+#f2 {
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    position: fixed;
+    font-size: small;
+}
+
+.f2-whole {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    max-height: 29rem;
+    overflow: hidden;
+}
+
 .f2-top {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -204,6 +243,72 @@ align-self: end;
    color: black;
    align-self: center;
 }
+
+/* B2 start */
+#b2 {
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    font-size: small;
+    }
+
+.b2-whole {
+    height: 29rem;
+    max-height: 29rem;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .b2-top {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 1.5rem;
+    }
+
+        .b2-img1 {
+            width: 10rem;
+            height: 10rem;
+            background-color: lightgray;
+            flex-grow: 1;
+        }
+
+        .b2-text1 {
+            padding: 0;
+            padding-right: 0.5rem;
+            text-wrap: wrap;
+            width: 50%;
+            padding-left: 0.5rem;
+        }
+
+    .b2-bottom {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        padding-top: 1.5rem;
+    }
+
+        .b2-img2 {
+            width: 10rem;
+            height: 10rem;
+            background-color: lightgray;
+        }
+
+        .b2-text2 {
+            padding: 0;
+            text-wrap: wrap;
+            width: 50%;
+            padding-right: 0.5rem;
+            padding-left: 0.5rem;
+        }
 
 /* F3 start */
 #f3 {
@@ -1032,11 +1137,27 @@ align-self: end;
         grid-column: 1 / 2;
         color: black; 
     }
+ 
+    .b9-middle{
+        padding: 0.125rem;
+        grid-row: 3;
+        grid-column: 1/3;
+        color: black; 
+    }
+
     .b9-bottom {
         background-color: lightgray;
-        grid-row: 4 / 6;
+        grid-row: 4 / 7;
         grid-column: 1 / 3;
     }
+
+    .b9-bottom2{
+        padding: 0.125rem;
+        grid-row: 7;
+        grid-column: 1/3 ;
+        color: black; 
+    }
+    
     .b9-text2{
         padding: 0.125rem;
         grid-row: 3;
@@ -1141,14 +1262,17 @@ align-self: end;
 /*f11 end*/
 /*b11 end*/
 #b11 {
-    height: 100%;
-    width: 100%;
-    display: flex;           
-    align-items: center;            
-    flex-direction: column; 
-    padding: 1rem;
-    position: fixed;
-    font-size: small;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+}
+
+.back-content h2 {
+    text-align: center;
+    margin: 0;
+   font-size: 2rem;
 }
 /*b11 end*/
 /* SEBASTIEN CSS END */
