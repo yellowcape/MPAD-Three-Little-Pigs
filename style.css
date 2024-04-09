@@ -188,6 +188,51 @@ align-self: end;
    align-self: center;
 }
 
+/* F3 start */
+#f3 {
+    height: 100%;
+    width: 100%;
+    display: flex;           
+    align-items: center;            
+    flex-direction: column; 
+    padding: 1rem;
+    position: fixed;
+    font-size: small;
+    }
+
+.f3-whole {
+    align-items: stretch;
+    height: 29rem;
+    width: 100%;
+    max-height: 29rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0.5rem;
+    overflow: hidden;
+    }
+
+        .f3-whitespace-top {
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+        align-self: center;
+        }
+
+        .f3-img1 {
+        background-color: lightgray;
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+        height: 18rem;
+        width: 100%;
+        }
+
+        .f3-whitespace-bottom {
+        grid-row: 3 / 4;
+        grid-column: 1 / 2;
+        align-self: center;
+        }
+
+/*F3 END*/
 /* CAROLINE CSS END */
 
 
