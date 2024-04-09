@@ -146,6 +146,23 @@ i {
 
 /* CAROLINE CSS START */
  
+/* F1 Start */
+#f1 {
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+}
+
+.front-content h3 {
+    text-align: center;
+    margin: 0;
+   font-size: 2rem;
+}
+   /*COVER PAGE END*/
+/* F1 End */
+
 /* F2 Start */
 .f2-top {
     display: grid;
