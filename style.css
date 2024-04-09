@@ -145,48 +145,37 @@ i {
 
 
 /* CAROLINE CSS START */
- 
-        .f2-top {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+.f2-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    background-color: lightgray;
+    height: 14rem;
+    margin-bottom: 1rem;
+}
 
-            background-color: lightgray;
-            height: 14rem;
-            margin-bottom: 1rem;
-        }
+.f2-bottom {
+display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 
-        .f2-bottom {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    background-color: lightgray;
+    height: 10rem;
+}
 
-            background-color: lightgray;
-            height: 14rem;
-        }
+    .f2-text1 {
+        padding: 0.125rem;
+        grid-row: 1;
+        grid-column: 1 / 3;
+        color: black;
+        align-self: center;
+    }
 
-            .f2-text1 {
-                padding: 0.125rem;
-                grid-row: 1;
-                grid-column: 1 / 3;
-                color: black;
-                align-self: center;
-            }
-
-            .f2-text2 {
-                padding: 0.125rem;
-                grid-row: 2;
-                grid-column: 1 / 3;
-                color: black;
-                align-self: center;
-            }
-
-.f2-middle {
-   padding: 0.125rem;
-   grid-row: 2;
-   grid-column: 1 / 3;
-   color: black;
-   align-self: center;
+    .f2-text2 {
+grid-row: 5; 
+grid-column: 1 / -1; 
+color: black; 
+align-self: end; 
 }
 
 /* CAROLINE CSS END */
