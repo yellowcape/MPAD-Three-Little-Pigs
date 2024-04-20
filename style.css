@@ -1009,6 +1009,12 @@ align-self: end;
                 cursor: pointer;
             }
         /* Kissing Scene Button End */
+
+        /*kissing hack*/
+         .kissing {
+            display: none;
+            opacity:100%;        
+        }
     /* Kissing Scene End*/
 /* ALEX CSS END */
 
