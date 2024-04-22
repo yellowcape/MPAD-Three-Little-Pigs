@@ -960,33 +960,112 @@ align-self: end;
         /* Kissing Scene Page Start */
         .kissing {
             position: absolute;
-            background-color: red;
+            background-color: white;
             opacity: 0;
-            display: none;
+            display: flex;
             width: 100%;
             height: 100%;
-            display: flex;
-            flex-direction: row;
             justify-content: center;
             align-items: center;
-            flex-wrap: nowrap;
+            margin: 1rem;
             }
-
                     .kissing-left{
                     width: 50%;
                     height: 100%;
                     display: grid;
                     grid-template-columns: 1fr;
                     grid-template-rows: 1fr 1fr 1fr;
+                    overflow: hidden;
+                    align-items: center;
+                    justify-content: center;
+                    padding-left: 5rem;
+                    padding-top: 5rem;
+                    padding-bottom: 5rem;
+                    padding-right: 3rem;
                     }
+
+                        .kissing-text1{
+                            grid-row: 1;
+                            align-self: center;
+                            justify-self: center;
+                            padding: 0.5rem;
+                            padding-bottom: 1rem;
+                            text-align: center;
+                            width: 30rem;
+                        }
+
+                        .kissing-img1{
+                            display: flex;
+                            grid-row: 2;
+                            background-color: lightgray;
+                            width: 30rem;
+                            height: 16rem;
+                            align-self: center;
+                            justify-self: center;
+                        }
+
+                        .kissing-text2{
+                            grid-row: 3;
+                            align-self: center;
+                            justify-self: center;
+                            padding: 0.5rem;
+                            padding-top: 1rem;
+                            text-align: center;
+                            width: 30rem;
+                        }
 
                     .kissing-right{
                     width: 50%;
                     height: 100%;
                     display: grid;
+                    align-items: center;
+                    justify-content: center;
                     grid-template-columns: 1fr;
-                    grid-template-rows: 1fr 1fr;
+                    grid-template-rows: 1fr 1fr 1fr;
+                    padding-top: 5rem;
+                    padding-right: 5rem;
+                    padding-bottom: 5rem;
+                    padding-left: 3rem;
                     }
+
+                    .kissing-img2 {
+                        display: flex;
+                        grid-row: 1;
+                        background-color: lightgray;
+                        width: 30rem;
+                        height: 20rem;
+                        align-self: center;
+                        justify-self: center;
+                    }
+
+                        .kissing-text3 {
+                            grid-row: 2;
+                            align-self: center;
+                            justify-self: center;
+                            padding: 0.5rem;
+                            padding-top: 1rem;
+                            text-align: center;
+                            width: 30rem;
+                        }
+            
+            .kissing-scene-close-button {
+                display: flex;
+                flex-direction: row;
+                background-color: #372254;
+                color: white;
+                width: 20rem;
+                height: min-content; /* Adjusted height */
+                border-radius: 2rem;
+                grid-row: 3;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                align-self: center;
+                padding: 0;
+                margin: 0;
+                height: 3rem;
+            }
+
         /* Kissing Scene Page End */
 
         /* Kissing Scene Button Start */
