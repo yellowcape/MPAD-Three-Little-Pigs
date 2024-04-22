@@ -83,22 +83,22 @@ function goNextPage(){
             case 8:
                 paper8.classList.add("flipped");
                 paper8.style.zIndex = 8;
-                // hideKissing();
+                hideKissing();
                 break;
             case 9:
                 paper9.classList.add("flipped");
                 paper9.style.zIndex = 9;
-                // hideKissing();
+                hideKissing();
                 break;
             case 10:
                 paper10.classList.add("flipped");
                 paper10.style.zIndex = 10;
-                // hideKissing();
+                hideKissing();
                 break;
             case 11:
                 paper11.classList.add("flipped");
                 paper11.style.zIndex = 11;
-                // hideKissing();
+                hideKissing();
                 closeBook();
                 break;
             default:
@@ -139,18 +139,22 @@ function goPrevPage(){
             case 8:
                     paper7.classList.remove("flipped");
                     paper7.style.zIndex = 5;
+                    hideKissing();
                 break;
             case 9:
                     paper8.classList.remove("flipped");
                     paper8.style.zIndex = 4;
+                    hideKissing();
                 break;
             case 10:
                     paper9.classList.remove("flipped");
                     paper9.style.zIndex = 3;
+                    hideKissing();
                 break;
             case 11:
                     paper10.classList.remove("flipped");
                     paper10.style.zIndex = 2;
+                    hideKissing();
                 break;
             case 12:
                     openBook();
@@ -164,16 +168,19 @@ function goPrevPage(){
     }
 }
 
- function kissingClick() {
+function kissingClick() {
     alert("KISS SCENE!!!!!!!!!!!!!!!!!!!!");
+    hideButtons();
     kissingScPg.style.display = "flex"; !important;
     kissingScPg.style.opacity = 100; !important;
     kissingBtn.style.opacity = 0; 
     kissingScPg.style.zIndex = 12;
+    nextBtn.disabled = true; 
 }
 
 function kissingCloseClick() {
     alert("no more kiss");
+    showButtons();
     kissingScPg.style.display = "none";
     kissing.style.display = "none";
     kissingScPg.style.opacity = 0;
@@ -182,4 +189,19 @@ function kissingCloseClick() {
 }
 
 function hideKissing() {
-        kissingBtn.style.visibility = "hidden";} 
+    kissingBtn.style.visibility = "hidden";
+    } 
+
+function hideButtons() {
+    prevBtn.style.display = "none";
+    prevBtn.disabled = true;
+    nextBtn.style.display = "none";
+    nextBtn.disabled = true;
+}
+
+function showButtons() {
+    prevBtn.style.display = "flex";
+    prevBtn.disabled = false;
+    nextBtn.style.display = "flex";
+    nextBtn.disabled = false;
+}

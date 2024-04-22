@@ -71,6 +71,7 @@ body {
 
 /* Controller Buttons */
 button {
+    display: flex;
     border: none;
     background-color: transparent;
     cursor: pointer;
@@ -970,6 +971,7 @@ align-self: end;
             align-items: center;
             flex-wrap: nowrap;
             }
+
                     .kissing-left{
                     width: 50%;
                     height: 100%;
