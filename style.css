@@ -180,7 +180,15 @@ i {
     height: 29rem;
     width: 100%;
     max-height: 29rem;
-    background-color: lightgray;
+    background-image: url("art/b1-img1.png");
+    background-size: cover;
+}
+
+.b1-text1 {
+    padding: 0.125rem;
+    color: white;
+    align-self: center;
+    font-size: small;
 }
 
 .b1-img1 {
@@ -213,18 +221,9 @@ i {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    background-color: lightgray;
-    height: 14rem;
-    margin-bottom: 1rem;
-}
-
-.f2-bottom {
-display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-
-    background-color: lightgray;
-    height: 10rem;
+    background-image: url(art/f2-img1.png);
+    background-size: cover;
+    height: 12rem;
 }
 
     .f2-text1 {
@@ -233,22 +232,58 @@ display: grid;
         grid-column: 1 / 3;
         color: black;
         align-self: center;
+        background: rgba(255, 255, 255, 0.4);
+        border-radius: 0.5rem;
+        margin-left: 1rem;
+    }
+
+    .f2-text1:hover {
+        background: rgba(255, 255, 255, 0.8);
     }
 
     .f2-text2 {
-grid-row: 5; 
-grid-column: 1 / -1; 
-color: black; 
-align-self: end; 
-}
+        grid-row: 5; 
+        grid-column: 1 / -1; 
+        color: black; 
+        align-self: end; 
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 0.5rem;
+        margin: 1rem;
+        padding: 0.125rem;
+        text-align: center;
+    }
+
+    .f2-text2:hover {
+        background: rgba(255, 255, 255, 0.8);
+    }
 
 .f2-middle {
-   padding: 0.125rem;
-   grid-row: 2;
-   grid-column: 1 / 3;
+   display: flex;
+   flex-grow: 1;
    color: black;
-   align-self: center;
+   align-items: center;
+   justify-content: center;
 }
+
+    .f2-text3 {
+        text-align: center;
+        grid-row: 2;
+        grid-column: 1 / 3;
+        color: black;
+        align-self: center;
+        justify-self: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+.f2-bottom {
+    display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        background-image: url(art/f2-img2.png);
+        background-size: cover;
+        height: 12rem;
+    }
 
 /* B2 start */
 #b2 {
@@ -281,7 +316,8 @@ align-self: end;
         .b2-img1 {
             width: 10rem;
             height: 10rem;
-            background-color: lightgray;
+            background-image: url(art/b2-img1.png);
+            background-size: cover;
             flex-grow: 1;
         }
 
@@ -305,7 +341,8 @@ align-self: end;
         .b2-img2 {
             width: 10rem;
             height: 10rem;
-            background-color: lightgray;
+            background-image: url(art/b2-img2.png);
+            background-size: cover;
         }
 
         .b2-text2 {
@@ -347,11 +384,12 @@ align-self: end;
         }
 
         .f3-img1 {
-        background-color: lightgray;
+        background-image: url(art/f3-img1.gif);
         grid-row: 2 / 3;
         grid-column: 1 / 2;
         height: 18rem;
         width: 100%;
+        background-size: cover;
         }
 
         .f3-whitespace-bottom {
@@ -394,7 +432,8 @@ align-self: end;
         }
 
         .b3-img1 {
-        background-color: lightgray;
+        background-image: url(art/b3-img1.png);
+        background-size: cover;
         grid-row: 2 / 3;
         grid-column: 1 / 2;
         height: 18rem;
@@ -434,8 +473,8 @@ align-self: end;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-
-        background-color: lightgray;
+        background-image: url(art/f4-img1.png);
+        background-size: cover;
         height: 14rem;
         margin-bottom: 1rem;
     }
@@ -446,24 +485,43 @@ align-self: end;
             grid-column: 1 / -1;
             color: black;
             align-self: center;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 0.5rem;
+            margin: 1rem;
+            padding: 0.125rem;
+            text-align: center;
         }
+
+            .f4-text1:hover {
+                background: rgba(255, 255, 255, 0.8);
+            }
 
     .f4-bottom {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 
-        background-color: lightgray;
+        background-image: url(art/f4-img2.png);
+        background-size: cover;
         height: 14rem;
     }
 
-        .f4-text3 {
+        .f4-text2 {
             padding: 0.125rem;
-            grid-row: 1;
+            grid-row: 6;
             grid-column: 1 /-1;
             color: black;
             align-self: center;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 0.5rem;
+            margin: 1rem;
+            padding: 0.125rem;
+            text-align: center;
         }
+
+            .f4-text2:hover {
+                background: rgba(255, 255, 255, 0.8);
+            }
 
 /*F4 END*/
 
@@ -500,7 +558,8 @@ align-self: end;
             grid-template-columns: 1fr 1fr 1fr 1fr;
             grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 
-            background-color: lightgray;
+            background-image: url(art/b4-img1.png);
+            background-size: cover;
             height: 14rem;
             margin-bottom: 1rem;
         }
@@ -508,25 +567,47 @@ align-self: end;
             .b4-text1 {
                 padding: 0.125rem;
                 grid-row: 1;
-                grid-column: 1 / 3;
+                grid-column: 3 / 5;
                 color: black;
                 align-self: center;
-            }
+                background: rgba(255, 255, 255, 0.5);
+                border-radius: 0.5rem;
+                margin: 1rem;
+                padding: 0.125rem;
+                text-align: center;
+                }
+
+                .b4-text1:hover {
+                    background: rgba(255, 255, 255, 0.8);
+                }
 
             .b4-text2 {
                 padding: 0.125rem;
-                grid-row: 2;
-                grid-column: 1 / 3;
+                grid-row: 5;
+                grid-column: 3 / 5;
                 color: white;
                 align-self: center;
+                text-align: center;
+                background: rgba(0, 0, 0, 0.5);
+                border-radius: 0.5rem;
+                margin: 1rem;
+                padding: 0.125rem;
             }
+
+                .b4-text2:hover {
+                    background: rgba(151, 0, 0, 0.8);
+                    font-weight: bolder;
+                    font-size: larger;
+                    grid-column: 1 / -1;
+                }
 
         .b4-bottom {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
             grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 
-            background-color: lightgray;
+            background-image: url(art/b4-bottom.png);
+            background-size: cover;
             height: 14rem;
         }
 
@@ -536,15 +617,32 @@ align-self: end;
                 grid-column: 1 / 4;
                 color: black;
                 align-self: center;
+                background: rgba(255, 255, 255, 0.5);
+                border-radius: 0.5rem;
+                margin: 1rem;
+                padding: 0.125rem;
+                text-align: center;
             }
+
+                .b4-text3:hover {
+                    background: rgba(255, 255, 255, 0.8);
+                }
 
             .b4-text4 {
                 padding: 0.125rem;
                 grid-row: 2;
-                grid-column: 1 / 4;
+                grid-column: 1 / 2;
                 color: white;
                 align-self: center;
+                background: rgba(0, 0, 0, 0.5);
+                border-radius: 0.5rem;
+                margin: 1rem;
+                padding: 0.125rem;
             }
+
+                .b4-text4:hover {
+                    text-shadow: 0px 0px 5px gold;
+                }
     /* B4 End */
 
 
@@ -567,7 +665,7 @@ align-self: end;
         width: 100%;
         max-height: 29rem;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         overflow: hidden;
         }
@@ -575,24 +673,32 @@ align-self: end;
 
             .f5-top {
                 grid-row: 1;
-                grid-column: 1 / 5;
+                grid-column: 1 / 4;
                 color: black;
                 align-self: center;
+                text-align: center;
             }
 
             .f5-bottom {
                 grid-row: 2 / 8;
-                grid-column: 1 / 5;
-                background-color: lightgray;
+                grid-column: 1 / 4;
+                background-image: url(art/f5-img1.png);
+                background-size: cover;
             }
 
             .f5-text2 {
-                grid-row: 2 / 4;
-                grid-column: 1 / 3;
-                color: white;
-                align-self: center;
-                padding: 0.125rem;
+                display: flex;
+                color: rgba(151, 0, 0, 1);
+                font-weight: bold;
+                border-radius: 0.5rem;
+                margin: 1rem;
+                text-shadow: 5px 5px 5px white;
             }
+
+                .f5-text2:hover {
+                    font-weight: 700;
+                    font-size: larger;
+                }
     /* F5 End */
 
 
@@ -622,7 +728,8 @@ align-self: end;
         }
 
             .b5-top {
-            background-color: lightgray;
+            background-image: url(art/b5-img1.png);
+            background-size: cover;
             grid-row: 1 / 2;
             grid-column: 1 / 2;
             height: 20rem;
@@ -632,6 +739,7 @@ align-self: end;
             align-self: center;
             grid-row: 2 / 3;
             grid-column: 1 / 2;
+            text-align: center;
             }
     /* B5 End */
 
@@ -668,7 +776,8 @@ align-self: end;
             }
 
             .f6-bottom {
-            background-color: lightgray;
+            background-image: url(art/f6.png);
+            background-size: cover;
             height: 20rem;
             grid-row: 2 / 3;
             grid-column: 1 / 2;
@@ -868,13 +977,15 @@ align-self: end;
                 width: 10rem;
                 height: 10rem;
                 background-color: lightgray;
+                padding-top: 1.5rem;
             }
 
             .b7-text2 {
-                padding: 0;
                 text-wrap: wrap;
                 width: 50%;
                 padding-right: 0.5rem;
+                padding-top: 0.5rem;
+                font-size: smaller;
             }
 
             
@@ -1368,3 +1479,7 @@ align-self: end;
 }
 /*b11 end*/
 /* SEBASTIEN CSS END */
+
+.dialogue {
+    font-style: italic;
+}
