@@ -191,6 +191,11 @@ i {
     font-size: small;
 }
 
+.b1-img1 {
+    height: 29rem;
+    width: 100%;
+    max-height: 29rem;
+}
 
 /* F2 Start */
 #f2 {
