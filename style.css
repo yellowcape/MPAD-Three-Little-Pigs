@@ -811,6 +811,7 @@ i {
             grid-column: 1 / 3;
             background-size: cover;
             height: 10rem;
+            margin-top: 10px;
             }
 
                 .b6-text1 {
@@ -851,11 +852,13 @@ i {
             .b6-middle {
                 background-color: lightgray;
                 background-image: url(art/b4-img1.png);
+                background-position: center; 
                 grid-row: 3 / 5;
                 grid-column: 1 / 3;
                 background-size: cover; 
                 height: 10rem;
                 width: 100%;
+
             }
 
                 .b6-text3 {
@@ -867,6 +870,7 @@ i {
                     border-radius: 0.5rem;
                     margin: 1rem;
                     padding: 0.125rem;
+                    text-align: left; 
                 }
 
                 .b6-text3:hover {
@@ -883,6 +887,7 @@ i {
                     border-radius: 0.5rem;
                     margin: 1rem;
                     padding: 0.125rem;
+                    text-align: left;
                 }
     
                     .b6-text4:hover {
@@ -959,7 +964,8 @@ i {
             }
 
             .f7-middle {
-            background-color: lightgray;
+            background-image: url(art/frame18.png);
+            background-size: cover;
             grid-row: 2 / 3;
             grid-column: 1 / 2;
             height: 18rem;
@@ -1028,9 +1034,10 @@ i {
         }
 
             .b7-img2 {
+                background-image: url(art/frame20.png);
+                background-size: cover;
                 width: 10rem;
                 height: 10rem;
-                background-color: lightgray;
                 padding-top: 1.5rem;
             }
 
