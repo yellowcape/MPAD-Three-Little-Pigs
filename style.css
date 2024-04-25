@@ -148,7 +148,8 @@ i {
  
 /* F1 Start */
 #f1 {
-    background-color: lightgray;
+    background-image: url(art/cover.png);
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1236,7 +1237,7 @@ i {
                 background-color: #372254;
                 color: white;
                 width: 20rem;
-                height: min-content; /* Adjusted height */
+                height: min-content; 
                 border-radius: 2rem;
                 grid-row: 3;
                 text-align: center;
