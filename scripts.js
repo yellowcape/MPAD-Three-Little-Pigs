@@ -169,7 +169,7 @@ function goPrevPage(){
 }
 
 function kissingClick() {
-    alert("KISS SCENE!!!!!!!!!!!!!!!!!!!!");
+    alert("Close this bonus scene by clicking anywhere on the screen.");
     hideButtons();
     kissingScPg.style.display = "flex"; !important;
     kissingScPg.style.opacity = 100; !important;
