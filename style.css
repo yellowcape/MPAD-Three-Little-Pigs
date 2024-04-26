@@ -1185,6 +1185,7 @@ i {
                     overflow: hidden;
                     align-items: center;
                     justify-content: center;
+                    background-color: #0C0D21;
                     }
 
                         .kissing-img1 {
@@ -1209,6 +1210,7 @@ i {
                     justify-content: center;
                     grid-template-columns: 1fr;
                     grid-template-rows: 1fr 1fr 1fr;
+                    background-color: #0C0D21;
                     }
 
                     .kissing-img2 {
@@ -1221,17 +1223,7 @@ i {
                         width: 50vw;
                         position: fixed;
                         top: 0;
-                    }   
-
-                        .kissing-text3 {
-                            grid-row: 2;
-                            align-self: center;
-                            justify-self: center;
-                            padding: 0.5rem;
-                            padding-top: 1rem;
-                            text-align: center;
-                            width: 30rem;
-                        }
+                    } 
 
         /* Kissing Scene Page End */
 
